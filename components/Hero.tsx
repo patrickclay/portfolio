@@ -21,6 +21,7 @@ export function Hero() {
           ))}
         </div>
 
+        {/* Metric block hidden while rethinking design
         <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
           {stats.map((stat) => (
             <div
@@ -34,6 +35,7 @@ export function Hero() {
             </div>
           ))}
         </div>
+        */}
       </div>
     </section>
   );
