@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { EnterpriseAI } from "@/components/EnterpriseAI";
 import { ProductsBuilt } from "@/components/ProductsBuilt";
+import { ClientDelivery } from "@/components/ClientDelivery";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <EnterpriseAI />
       <ProductsBuilt />
+      <ClientDelivery />
     </main>
   );
 }
