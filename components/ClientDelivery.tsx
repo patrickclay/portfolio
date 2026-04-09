@@ -17,7 +17,7 @@ const techStack = [
 
 export function ClientDelivery() {
   return (
-    <section className="py-20 px-6 relative z-10">
+    <section className="py-12 px-6 relative z-10">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-2xl font-bold text-white mb-8">
           AI-Managed Client Delivery

@@ -3,7 +3,7 @@ import { TechPill } from "./TechPill";
 
 export function Hero() {
   return (
-    <section className="relative py-24 px-6">
+    <section className="relative py-16 px-6">
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Patrick Boggs</h1>
         <p className="text-sm font-mono text-slate-400 tracking-wide mb-4">
