@@ -107,7 +107,7 @@ export const products: CardData[] = [
     description:
       "A Claude Code Skill that takes a website URL, pulls all content into local files, restructures the page, and generates new HTML from a chosen design template. Built sites are posted to a portfolio page for customer approval. On approval, the platform spins up a dedicated Vercel instance, creates a GitHub repo for the site, and connects an email and web form to GitHub automation so customers can request changes without touching code.",
     outcome:
-      "The foundation of a fully automated web platform — from scrape to deploy to ongoing customer-driven updates.",
+      "The foundation of a fully automated web platform covering scrape, deploy, and ongoing customer-driven updates.",
     techStack: [
       "Claude Code",
       "Vercel",
