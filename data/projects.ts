@@ -186,4 +186,8 @@ export const categoryLabels: Record<ProjectCategory, string> = {
   "full-stack": "Full-Stack",
 };
 
-export const aboutText = `I've been building digital products since 1997. My first mobile project was a real estate listing app for the Palm Pilot. Since then I've led product, design, and engineering across marketplaces, automotive platforms, and enterprise systems at Cox Automotive, Manheim, and Credit Acceptance. Before tech, I toured the U.S. playing drums in a van. Building products and touring in a band have a lot in common.`;
+export const aboutParagraphs = [
+  "I've led product, design, and engineering initiatives across marketplaces, consumer platforms, and dealer technology. I've worked as a product director, UX designer, engineering lead, development manager, and product owner. That range gives me a practical understanding of how great products get built — from concept to code to customer adoption.",
+  "I started building digital products in 1997. My first mobile experience was a real estate listing app for the Palm Pilot web browser, back when the mobile web was still called WAP.",
+  "Before tech, I toured the U.S. playing drums in a van. Building products and touring in a band have a lot in common — both require creativity, resilience, and the ability to adapt when things don't go according to plan.",
+];

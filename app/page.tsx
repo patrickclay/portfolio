@@ -1,3 +1,4 @@
+import { BackgroundArt } from "@/components/BackgroundArt";
 import { Hero } from "@/components/Hero";
 import { EnterpriseAI } from "@/components/EnterpriseAI";
 import { ProductsBuilt } from "@/components/ProductsBuilt";
@@ -7,7 +8,8 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen relative">
+      <BackgroundArt />
       <Hero />
       <EnterpriseAI />
       <ProductsBuilt />

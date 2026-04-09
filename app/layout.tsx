@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
+import { Outfit, DM_Mono } from "next/font/google";
 import "./globals.css";
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
+
+const dmMono = DM_Mono({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-dm-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Patrick Boggs — Product & Technology Leader | AI-Accelerated Product Development",
@@ -22,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${outfit.variable} ${dmMono.variable}`}>
       <body>{children}</body>
     </html>
   );

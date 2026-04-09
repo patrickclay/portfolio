@@ -15,7 +15,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-slate-900 to-slate-800 py-12 px-6 border-t border-white/[0.06]">
+    <footer className="relative z-10 py-12 px-6 border-t border-slate-700/30">
       <div className="max-w-3xl mx-auto flex flex-wrap justify-center gap-6">
         {links.map((link) => (
           <a
@@ -23,7 +23,7 @@ export function Footer() {
             href={link.href}
             target={link.href.startsWith("mailto") ? undefined : "_blank"}
             rel="noopener noreferrer"
-            className="text-sm text-slate-500 hover:text-indigo-400 transition-colors"
+            className="text-sm text-slate-500 hover:text-cyan-400 transition-colors"
           >
             {link.label}
           </a>
