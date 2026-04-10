@@ -11,8 +11,7 @@ jobs:
     # Trigger on new issues with the auto-request label that mention @claude,
     # OR on any comment that mentions @claude (for follow-ups)
     if: |
-      (github.event_name == 'issues' && github.event.action == 'opened' &&
-        contains(github.event.issue.labels.*.name, 'auto-request') &&
+      (github.event_name == 'issues' &&
         (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude'))) ||
       (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude'))
     runs-on: ubuntu-latest
