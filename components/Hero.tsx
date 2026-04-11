@@ -12,7 +12,7 @@ export function Hero() {
         </p>
         <p className="text-base font-sans text-[#f4f4f4]/80 max-w-xl mx-auto mb-8">
           I&apos;ve spent 27 years building products with designers and
-          engineers — turning messy ideas into things people love using.
+          engineers, turning messy ideas into things people love using.
           Today I&apos;m focused on the intersection of marketplaces,
           automotive technology, and AI-assisted product development.
         </p>
