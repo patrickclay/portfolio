@@ -126,7 +126,7 @@ Server component. Fully static.
 - `<h2><Link href="/blog/[slug]">{title}</Link></h2>` — the title is the primary link.
 - Date as `<time dateTime={iso}>` — semantic and friendly to crawlers.
 - Description as the blurb paragraph.
-- "Read more →" link to the same `/blog/[slug]` (redundant click target; intentional for usability and to give the link a clear textual affordance for screen readers).
+- "Read more →" affordance: the **entire card is a single `<Link>`**; the title is rendered as an `<h2>` *inside* the link (not a separate nested `<a>`), and "Read more →" is decorative text inside the same link. This avoids the duplicate-link-to-same-URL a11y issue while keeping the visible CTA the user wants.
 
 ## Styling
 
@@ -145,7 +145,14 @@ A small custom CSS block in `app/globals.css`, scoped to a class such as `.artic
 
 ### JSON-LD `Article` schema
 
-Inline `<script type="application/ld+json">` on each post page with at minimum `@type: "Article"`, `headline`, `datePublished`, `description`, `url`, `author`.
+Inline `<script type="application/ld+json">` on each post page with at minimum:
+
+- `@type: "Article"`
+- `headline` (post title)
+- `datePublished` (post date in ISO format)
+- `description`
+- `url` (absolute, canonical)
+- `author: { "@type": "Person", "name": "Patrick Boggs" }`
 
 ### `app/sitemap.ts`
 
@@ -162,7 +169,7 @@ Default export allows all user agents and points to the sitemap. Next serves at 
 
 ### Site URL
 
-A `NEXT_PUBLIC_SITE_URL` environment variable (e.g. `https://patrickboggs.com`) supplies the absolute base. A sensible local fallback (`http://localhost:3000`) avoids breaking dev. The same constant is the source of truth for canonical URLs, JSON-LD `url`, sitemap entries, and OpenGraph URLs.
+A `NEXT_PUBLIC_SITE_URL` environment variable (e.g. `https://patrickboggs.com`) supplies the absolute base. A sensible local fallback (`http://localhost:3000`) avoids breaking dev. Set in `.env.local` for local development and in Vercel project env vars for production/preview. The same constant is the source of truth for canonical URLs, JSON-LD `url`, sitemap entries, and OpenGraph URLs.
 
 ## Performance
 
@@ -170,6 +177,15 @@ A `NEXT_PUBLIC_SITE_URL` environment variable (e.g. `https://patrickboggs.com`) 
 - Post pages ship zero JS for the article itself. The existing `BackgroundArt` client component remains the only client JS on the page (already present on `/blog`).
 - Markdown parsing happens at build, not at request time.
 - Loader memoization avoids redundant disk reads across `generateStaticParams`, `generateMetadata`, and the page render within a single build.
+
+## Implementation Note: Next.js 16.2 Surface
+
+Per the project's `AGENTS.md`, Next.js APIs in this version may differ from older conventions. Before implementing, the planner should verify the current shape of the following against `node_modules/next/dist/docs/`:
+
+- `generateStaticParams` and `dynamicParams` (dynamic-route prerendering)
+- `generateMetadata` and the `Metadata` type (per-route metadata, `alternates.canonical`, `openGraph`)
+- `app/sitemap.ts` and `app/robots.ts` (file conventions and return-type signatures)
+- Server-component usage of `dangerouslySetInnerHTML`
 
 ## Dependencies
 
