@@ -114,7 +114,6 @@ export const enterpriseProjects: CardData[] = [
 export const products: CardData[] = [
   {
     title: "Website Builder",
-    link: "https://website-builder-five-zeta.vercel.app",
     category: "ai-product",
     summary:
       "Claude generates production-ready websites from a single form",
