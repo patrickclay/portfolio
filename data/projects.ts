@@ -214,6 +214,7 @@ export const products: CardData[] = [
   },
   {
     title: "Project Car Manager",
+    link: "https://projectcar.pro",
     category: "full-stack",
     summary:
       "Project car management app for budgets, parts, and race prep",
