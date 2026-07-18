@@ -30,6 +30,25 @@ export const techPills = [
 
 export const enterpriseProjects: CardData[] = [
   {
+    title: "AI-Empowered Team OS",
+    summary:
+      "An AI-empowered 'team operating system' that gives the whole team — and its AI tools — one shared, connected source of context",
+    description:
+      "A team operating system with Claude Code as the primary platform for shared context. It ties a shared knowledge base to the systems the team already works in — GitHub, Google Analytics, Adobe Analytics and Customer Journey Optimizer, Databricks, Power BI, and Figma Make — so context stops living in scattered tools and threads. It posts status updates, keeps documents current, and routes notifications as work moves. And because it's grounded in the team's real GitHub code, it generates code and builds working prototypes that follow the patterns already in the codebase, not generic scaffolding.",
+    outcome:
+      "One connected source of truth for the team and its AI tools — turning real code patterns into ready-to-extend prototypes and cutting the context-gathering tax.",
+    techStack: [
+      "Claude Code (Enterprise)",
+      "GitHub",
+      "Databricks",
+      "Power BI",
+      "Google Analytics",
+      "Adobe Analytics",
+      "Adobe Customer Journey Optimizer",
+      "Figma Make",
+    ],
+  },
+  {
     title: "Strategic Document Pipeline & Automated Reporting",
     summary:
       "AI pipeline that turns strategic documents into team-level work breakdowns, Jira Epics, Stories and tasks, Confluence pages, and a document suite",
