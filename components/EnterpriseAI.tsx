@@ -1,5 +1,5 @@
 import { enterpriseProjects } from "@/data/projects";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectList } from "./ProjectList";
 
 export function EnterpriseAI() {
   return (
@@ -12,11 +12,7 @@ export function EnterpriseAI() {
           Director of Product Management
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {enterpriseProjects.map((project) => (
-            <ProjectCard key={project.title} data={project} />
-          ))}
-        </div>
+        <ProjectList projects={enterpriseProjects} />
       </div>
     </section>
   );

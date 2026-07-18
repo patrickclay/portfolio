@@ -1,5 +1,5 @@
 import { products } from "@/data/projects";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectList } from "./ProjectList";
 
 export function ProductsBuilt() {
   return (
@@ -9,11 +9,7 @@ export function ProductsBuilt() {
           Recent Products I Have Built
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {products.map((project) => (
-            <ProjectCard key={project.title} data={project} />
-          ))}
-        </div>
+        <ProjectList projects={products} />
       </div>
     </section>
   );
