@@ -99,6 +99,16 @@ export function ProjectList({ projects }: { projects: CardData[] }) {
                         <TechPill key={tech} label={tech} />
                       ))}
                     </div>
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="self-start text-xs font-mono text-cyan-400 hover:underline"
+                      >
+                        View live site ↗
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

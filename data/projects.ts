@@ -7,6 +7,7 @@ export interface CardData {
   outcome: string;
   techStack: string[];
   category?: ProjectCategory;
+  link?: string;
 }
 
 export const stats = [
@@ -113,6 +114,7 @@ export const enterpriseProjects: CardData[] = [
 export const products: CardData[] = [
   {
     title: "Website Builder",
+    link: "https://website-builder-five-zeta.vercel.app",
     category: "ai-product",
     summary:
       "Claude generates production-ready websites from a single form",
@@ -147,6 +149,7 @@ export const products: CardData[] = [
   },
   {
     title: "Hot Laps Event Finder",
+    link: "https://hotlaps.vercel.app",
     category: "ai-product",
     summary:
       "AI-powered motorsports event discovery using Google Gemini",
@@ -158,6 +161,7 @@ export const products: CardData[] = [
   },
   {
     title: "Hot Lap Rentals",
+    link: "https://hotlaprentals.com",
     category: "saas-platform",
     summary:
       "Track day car rental marketplace — auth, bookings, AI, Cloud Run",
@@ -175,6 +179,7 @@ export const products: CardData[] = [
   },
   {
     title: "GymSite",
+    link: "https://fitnesssite-six.vercel.app",
     category: "saas-platform",
     summary:
       "Gym class scheduling and booking with payments and AI",
@@ -191,6 +196,7 @@ export const products: CardData[] = [
   },
   {
     title: "HLR Contracts",
+    link: "https://hlr-contracts.vercel.app",
     category: "full-stack",
     summary:
       "E-signature rental contract platform with PDF generation",
