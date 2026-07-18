@@ -149,7 +149,7 @@ export const products: CardData[] = [
   },
   {
     title: "Hot Laps Event Finder",
-    link: "https://hotlaps.vercel.app",
+    link: "https://events.hotlaprentals.com",
     category: "ai-product",
     summary:
       "AI-powered motorsports event discovery using Google Gemini",
