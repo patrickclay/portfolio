@@ -49,6 +49,16 @@ export const enterpriseProjects: CardData[] = [
     ],
   },
   {
+    title: "Synthetic User Research Agent",
+    summary:
+      "An automated research agent that mines real shopper conversations to build an evidence-based synthetic research panel",
+    description:
+      "An autonomous research agent pointed at the forums and communities where vehicle shoppers discuss their experience — what worked, what didn't, and where the process breaks down. It pulls real quotes and builds evidence banks across prime and non-prime segments, staged at 30, then 100, then 500 quotes per segment. Once a bank is deep enough, the agent derives shopper archetypes from what the data actually says, not from team assumptions. The end state: an agent built for each archetype, so a design, concept, or marketing message can be pre-tested against realistic shopper reactions before committing to a live study. Currently in the data-collection phase, building the quote banks the archetypes will be derived from.",
+    outcome:
+      "Early research signal against real shopper archetypes in hours, not weeks — and every archetype traces back to actual customer quotes.",
+    techStack: ["Claude Code (Enterprise)", "Claude API"],
+  },
+  {
     title: "Strategic Document Pipeline & Automated Reporting",
     summary:
       "AI pipeline that turns strategic documents into team-level work breakdowns, Jira Epics, Stories and tasks, Confluence pages, and a document suite",
