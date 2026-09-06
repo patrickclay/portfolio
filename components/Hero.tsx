@@ -8,7 +8,7 @@ export function Hero() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Patrick Boggs</h1>
         <p className="text-sm font-mono text-slate-400 tracking-wide mb-4">
           Product &amp; Technology Leader | AI-Accelerated Product Development |
-          Builder Since 1997
+          Experienced Builder
         </p>
         <p className="text-base font-sans text-[#f4f4f4]/80 max-w-xl mx-auto mb-8">
           I&apos;ve spent 27 years building products with designers and
