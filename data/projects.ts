@@ -113,6 +113,37 @@ export const enterpriseProjects: CardData[] = [
 
 export const products: CardData[] = [
   {
+    title: "Vendor Pricing & Reconciliation Engine",
+    category: "full-stack",
+    summary:
+      "Deterministic supplier price-file → store catalog reprice, retirements, and exception reports",
+    description:
+      "Built for an industrial parts seller's monthly vendor cycle. Reads a supplier price export and the current ecommerce catalog, then emits import-ready reprice and retirement files plus a full exception report. Same inputs always produce the same outputs — no AI in the pricing math. Validated by rebuilding a real production reprice run against tens of thousands of parts and matching the vast majority of prices exactly; remaining deltas were known manual holds.",
+    outcome:
+      "What used to be a day of spreadsheets and macros becomes a logged, reviewable run.",
+    techStack: [
+      "Python",
+      "Deterministic pipelines",
+      "Vercel",
+    ],
+  },
+  {
+    title: "Automotive Technology Knowledge Base",
+    category: "ai-product",
+    summary:
+      "Conceptual, sourced knowledge base across the auto-tech stack — dealership software, F&I, lenders, DMS, and the AI layer",
+    description:
+      "Markdown-first product intelligence system for the automotive technology ecosystem: a layered industry map, vendor profiles, competitive matrices, and company dossiers. Claude Code skills drive research, profiling, comparison, and verification so every claim stays cited and dated. Includes a local read-first web app over the knowledge corpus. Built to think clearly about auto-tech products — not to run a live dealership workflow.",
+    outcome:
+      "A durable, evidence-backed mental model of the auto-tech landscape you can query and extend.",
+    techStack: [
+      "Claude Code",
+      "Markdown knowledge base",
+      "Next.js",
+      "Sourced research workflows",
+    ],
+  },
+  {
     title: "Website Builder",
     category: "ai-product",
     summary:
